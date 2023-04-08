@@ -5,7 +5,8 @@ Console.WriteLine("1-Soma\n2-Subtração\n3-Multiplicação\n4-Divisão\n0-Sair\
 //Leitura da opção escolhida
 int opcao = Convert.ToInt32(Console.ReadLine());
 
-double n1,n2,n3;
+decimal n1,n2;
+//string n3;
 
 switch(opcao)
 {
@@ -14,13 +15,20 @@ switch(opcao)
     
     case 1:
         Console.WriteLine("Digite o primeiro valor:");
-        n1 = Convert.ToDouble(Console.ReadLine());
+        n1 = Convert.ToDecimal(Console.ReadLine());
         Console.WriteLine("Digite o segundo valor:");
-        n2 = Convert.ToDouble(Console.ReadLine());
+        n2 = Convert.ToDecimal(Console.ReadLine());
         Console.WriteLine($"\n{n1} + {n2} = {n1+n2}");
-        //Console.WriteLine(n1 + n2);
+        
         break;
 
+    case 2:
+        Console.WriteLine("Digite o primeiro valor:");
+        n1 = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Digite o segundo valor:");
+        n2 = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine($"\n{n1} - {n2} = {n1-n2}");
+        break;
 
 }
 
