@@ -30,5 +30,12 @@ switch(opcao)
         Console.WriteLine($"\n{n1} - {n2} = {n1-n2}");
         break;
 
+    case 3:
+        Console.WriteLine("Digite o primeiro valor:");
+        n1 = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Digite o segundo valor:");
+        n2 = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine($"\n{n1} * {n2} = {n1*n2}");
+        break;
 }
 
